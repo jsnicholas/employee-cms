@@ -1,0 +1,38 @@
+{
+  "mainMenu": {
+    "type": "list",
+    "name": "mainMenu",
+    "message": "What would you like to do?",
+    "choices": [
+      "01 View all Departments",
+      "02 View all Roles",
+      "03 View all Employees",
+      "04 Add a department",
+      "05 Add a role",
+      "06 Add an Employee",
+      "07 Update an employee role"
+    ]
+  },
+  "viewAll": {
+    "01": {
+      "query": "SELECT * FROM department"
+    },
+    "02": {
+      "query": "SELECT * FROM roles"
+    },
+    "03": {
+      "query": "SELECT * FROM employees"
+    }
+  },
+  "add": {
+    "department": {
+      "query": "INSERT INTO department (name) VALUES (value)"
+    },
+    "role": {
+      "query": "INSERT INTO roles (name) VALUES (value)"
+    },
+    "employee": {
+      "query": "INSERT INTO employees (name) VALUES (value)"
+    }
+  }
+}
