@@ -13,15 +13,20 @@
       "07 Update an employee role"
     ]
   },
+  "confirmExit": {
+    "type": "confirm",
+    "name": "confirmExit",
+    "message": "Would you like to select another option?"
+  },
   "viewAll": {
     "01": {
-      "query": "SELECT * FROM department"
+      "query": "SELECT * FROM departments"
     },
     "02": {
-      "query": "SELECT * FROM roles"
+      "query": "SELECT * FROM roles;"
     },
     "03": {
-      "query": "SELECT * FROM employees"
+      "query": "SELECT * FROM employees;"
     }
   },
   "add": {
