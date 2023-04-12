@@ -30,14 +30,14 @@
     }
   },
   "add": {
-    "department": {
-      "query": "INSERT INTO department (name) VALUES (value)"
+    "04": {
+      "query": "INSERT INTO departments (department_name) VALUES "
     },
-    "role": {
-      "query": "INSERT INTO roles (name) VALUES (value)"
+    "05": {
+      "query": "INSERT INTO roles (role_title) VALUES "
     },
-    "employee": {
-      "query": "INSERT INTO employees (name) VALUES (value)"
+    "06": {
+      "query": "INSERT INTO employees (first_name) VALUES "
     }
   }
 }

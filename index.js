@@ -9,8 +9,8 @@ function mainMenu() {
             // load questions from json file
             questions.mainMenu
         ]).then((answer) => {
-            // pass user answer to handleAnswer function
-            handleAnswers(answer);
+            // pass user answer and mainMenu function to handleAnswer function
+            handleAnswers(answer, mainMenu);
         })
         .catch((err) => {
             // do something if there is an error

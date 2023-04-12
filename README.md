@@ -1,35 +1,18 @@
-# employee-cms
+# Employee CMS
 
-To do:
+## Description
 
-On app start, user is presented with:
-Inquirer Main Menu options:
+This is a command-line nodejs application for viewing and managing employees, departments, and roles.
 
-- view all departments
-- view all roles
-- view all employees
-- add a department
-- add a role
-- add an employee
-- update an employee role
+## Installation
 
-  WHEN I choose to view all departments
-  THEN I am presented with a formatted table showing department names and department ids
+Use `npm i` to install dependencies (inquirer, mysql2).
+Run the /schema/schema.sql and /schema/seeds.sql files to create and populate the database.
 
-  WHEN I choose to view all roles
-  THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
+## Usage
 
-  WHEN I choose to view all employees
-  THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
+Run `node index.js` to start the application. Use the up and down arrows to navigate through the options.
 
-  WHEN I choose to add a department
-  THEN I am prompted to enter the name of the department and that department is added to the database
+## License
 
-  WHEN I choose to add a role
-  THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-
-  WHEN I choose to add an employee
-  THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-
-  WHEN I choose to update an employee role
-  THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+MIT. View the LICENSE file for more information.
