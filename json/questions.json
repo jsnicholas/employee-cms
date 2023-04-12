@@ -13,6 +13,11 @@
       "07 Update an employee role"
     ]
   },
+  "enterData": {
+    "type": "input",
+    "name": "inputData",
+    "message": "Please enter a name for this option \n"
+  },
   "confirmExit": {
     "type": "confirm",
     "name": "confirmExit",
