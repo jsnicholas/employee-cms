@@ -6,7 +6,7 @@ This is a command-line nodejs application for viewing and managing employees, de
 
 ## Installation
 
-Use `npm i` to install dependencies (inquirer, mysql2).
+Use `npm i` to install dependencies (inquirer, mysql2, console.table).
 Run the /schema/schema.sql and /schema/seeds.sql files to create and populate the database.
 
 ## Usage
