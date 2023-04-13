@@ -20,11 +20,23 @@
       "name": "inputData",
       "message": "Please enter a name for this department \n"
     },
-    "role": {
-      "type": "input",
-      "name": "inputData",
-      "message": "Please enter a name for this department \n"
-    },
+    "role": [
+      {
+        "type": "input",
+        "name": "role_name",
+        "message": "Please enter a name for this role \n"
+      },
+      {
+        "type": "input",
+        "name": "dept_id",
+        "message": "Enter the department ID for this role \n"
+      },
+      {
+        "type": "input",
+        "name": "salary",
+        "message": "Enter the salary for this role \n"
+      }
+    ],
     "employee": [
       {
         "type": "input",
@@ -38,13 +50,13 @@
       },
       {
         "type": "input",
-        "name": "empRole",
+        "name": "emp_role_id",
         "message": "Enter employee's role ID \n"
       },
       {
         "type": "input",
-        "name": "lastName",
-        "message": "Enter employee's last name \n"
+        "name": "emp_mgr_name",
+        "message": "Enter name of Employee's manager \n"
       }
     ]
   },
@@ -64,10 +76,10 @@
       "query": "INSERT INTO departments (department_name) VALUES "
     },
     "05": {
-      "query": "INSERT INTO roles (role_title) VALUES "
+      "query": "INSERT INTO roles (role_title, department_id, salary) VALUES "
     },
     "06": {
-      "query": "INSERT INTO employees (first_name) VALUES "
+      "query": "INSERT INTO employees (first_name, last_name, role_id, manager) VALUES "
     }
   }
 }

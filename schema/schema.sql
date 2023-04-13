@@ -5,25 +5,24 @@ DROP DATABASE IF EXISTS org_db;
 CREATE DATABASE org_db;
 
 USE org_db;
-CREATE TABLE employees (
-    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    first_name VARCHAR(20),
-    last_name VARCHAR(20),
-    role_title VARCHAR(20),
-    department_name VARCHAR(20),
-    salary INT,
-    manager VARCHAR(20)
-);
 
 CREATE TABLE departments (
     id INT AUTO_INCREMENT NOT NULL PRIMARY KEY, 
-    department_name VARCHAR(20) NOT NULL
+    department_name VARCHAR(30) NOT NULL
 );
-
 CREATE TABLE roles (
-    role_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    role_title VARCHAR(20) NOT NULL,
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    role_title VARCHAR(30) NOT NULL,
+    salary DECIMAL NOT NULL,
     department_id INT,
-    salary INT NOT NULL,
     FOREIGN KEY (department_id) REFERENCES departments(id)
 ); 
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    first_name VARCHAR(30),
+    last_name VARCHAR(30),
+    role_id INT NOT NULL,
+    manager VARCHAR(20),
+    FOREIGN KEY (role_id) REFERENCES roles(id)
+);
+
