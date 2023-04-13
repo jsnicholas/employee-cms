@@ -10,18 +10,43 @@
       "04 Add a department",
       "05 Add a role",
       "06 Add an Employee",
-      "07 Update an employee role"
+      "07 Update an employee role",
+      "08 Exit"
     ]
   },
   "enterData": {
-    "type": "input",
-    "name": "inputData",
-    "message": "Please enter a name for this option \n"
-  },
-  "confirmExit": {
-    "type": "confirm",
-    "name": "confirmExit",
-    "message": "Would you like to select another option?"
+    "department": {
+      "type": "input",
+      "name": "inputData",
+      "message": "Please enter a name for this department \n"
+    },
+    "role": {
+      "type": "input",
+      "name": "inputData",
+      "message": "Please enter a name for this department \n"
+    },
+    "employee": [
+      {
+        "type": "input",
+        "name": "firstName",
+        "message": "Enter employee's first name \n"
+      },
+      {
+        "type": "input",
+        "name": "lastName",
+        "message": "Enter employee's last name \n"
+      },
+      {
+        "type": "input",
+        "name": "empRole",
+        "message": "Enter employee's role ID \n"
+      },
+      {
+        "type": "input",
+        "name": "lastName",
+        "message": "Enter employee's last name \n"
+      }
+    ]
   },
   "viewAll": {
     "01": {
