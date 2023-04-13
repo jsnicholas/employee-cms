@@ -51,12 +51,12 @@
       {
         "type": "input",
         "name": "emp_role_id",
-        "message": "Enter employee's role ID \n"
+        "message": "Enter ID of employee's role \n"
       },
       {
         "type": "input",
-        "name": "emp_mgr_name",
-        "message": "Enter name of Employee's manager \n"
+        "name": "manager_id",
+        "message": "Enter ID number of employee's manager \n"
       }
     ]
   },
@@ -79,7 +79,7 @@
       "query": "INSERT INTO roles (role_title, department_id, salary) VALUES "
     },
     "06": {
-      "query": "INSERT INTO employees (first_name, last_name, role_id, manager) VALUES "
+      "query": "INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES "
     }
   }
 }
