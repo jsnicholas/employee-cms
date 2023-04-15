@@ -81,5 +81,19 @@
     "06": {
       "query": "INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES "
     }
+  },
+  "update": {
+    "employee": [
+      {
+        "type": "input",
+        "name": "emp_id",
+        "message": "Enter the ID of the employee you wish to update"
+      },
+      {
+        "type": "input",
+        "name": "emp_new_role_id",
+        "message": "Enter the new role ID for this employee"
+      }
+    ]
   }
 }
