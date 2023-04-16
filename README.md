@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a command-line nodejs application for viewing and managing employees, departments, and roles.
+This is a command-line nodejs application for viewing and managing employees, departments, and roles within a MySQL database.
 
 ## Installation
 
